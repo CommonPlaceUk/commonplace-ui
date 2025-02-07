@@ -102,10 +102,13 @@ Commonplace is an open-source platform to increase transparency in British polit
 
 | Command                | Description                           |
 |------------------------|---------------------------------------|
-| `yarn dev`          | Start local dev server                |
-| `yarn build`        | Production build                      |
-| `yarn run lint`         | Run ESLint                            |
-| `yarn run format`       | Format code with Prettier             |
+| `yarn dev`             | Start local dev server                |
+| `yarn build`           | Production build                      |
+| `yarn run lint`        | Run ESLint                            |
+| `yarn run format`      | Format code with Prettier             |
+| `yarn test`            | Run Jest tests                        |
+| `yarn run test:watch`  | Run Jest tests in watch mode          |
+|------------------------|---------------------------------------|
 
 ---
 
@@ -115,16 +118,18 @@ Commonplace is an open-source platform to increase transparency in British polit
 commonplace-ui/
 ├── app/
 │   ├── (public)/          # Public pages (landing, tools)
-│   ├── (auth)/           # Authentication flows
-│   └── layout.tsx        # Root layout
-├── components/           # Reusable UI components
-├── lib/
-│   ├── store.ts          # Redux store
-│   └── api/             # RTK Query endpoints
-├── styles/
-│   ├── globals.css       # Tailwind imports
-│   └── tailwind.config.js
-└── public/               # Static assets
+│   │   ├── page.tsx       # Landing page
+│   │   ├── login/         # Login page
+│   │   ├── email/         # Email drafting tool
+│   │   ├── profile/       # Public figure profiles
+│   │   ├── petition/      # Petition creation tool
+│   ├── (auth)/            # Authentication flows
+│   └── layout.tsx         # Root layout
+├── components/            # Reusable UI components
+├── features/              # Feature modules
+├── redux/
+│   ├── store.ts           # Redux store
+│   └── api/               # RTK Query endpoints
 ```
 
 ---
