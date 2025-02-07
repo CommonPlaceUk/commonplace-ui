@@ -52,13 +52,13 @@ Commonplace is an open-source platform to increase transparency in British polit
 
 ## Tech Stack
 
-| Category              | Tools                                                                 |
-|-----------------------|-----------------------------------------------------------------------|
-| **Framework**         | Next.js 15 (App Router)                                               |
-| **Styling**           | Tailwind CSS + Headless UI                                            |
-| **State Management**  | Redux Toolkit (RTK) + RTK Query                                       |
-| **CI/CD**             | GitHub Actions → Azure Static Web Apps                                |
-| **Testing**           | Jest + React Testing Library (Post-MVP)                               |
+| Category             | Tools                                   |
+| -------------------- | --------------------------------------- |
+| **Framework**        | Next.js 15 (App Router)                 |
+| **Styling**          | Tailwind CSS + Headless UI              |
+| **State Management** | Redux Toolkit (RTK) + RTK Query         |
+| **CI/CD**            | GitHub Actions → Azure Static Web Apps  |
+| **Testing**          | Jest + React Testing Library (Post-MVP) |
 
 ---
 
@@ -100,21 +100,21 @@ Commonplace is an open-source platform to increase transparency in British polit
 
 ### Scripts
 
-| Command                | Description                           |
-|------------------------|---------------------------------------|
-| `yarn dev`             | Start local dev server                |
-| `yarn build`           | Production build                      |
-| `yarn run lint`        | Run ESLint                            |
-| `yarn run format`      | Format code with Prettier             |
-| `yarn test`            | Run Jest tests                        |
-| `yarn run test:watch`  | Run Jest tests in watch mode          |
-|------------------------|---------------------------------------|
+| Command                  | Description                             |
+| ------------------------ | --------------------------------------- |
+| `yarn dev`               | Start local dev server                  |
+| `yarn build`             | Production build                        |
+| `yarn run lint`          | Run ESLint                              |
+| `yarn run format`        | Format code with Prettier               |
+| `yarn test`              | Run Jest tests                          |
+| `yarn run test:watch`    | Run Jest tests in watch mode            |
+| ------------------------ | --------------------------------------- |
 
 ---
 
 ## Directory Structure
 
-``` plaintext
+```plaintext
 commonplace-ui/
 ├── app/
 │   ├── (public)/          # Public pages (landing, tools)
