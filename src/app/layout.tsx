@@ -33,7 +33,7 @@ export default function RootLayout({
             { label: 'Raise A Petition', href: '/petition' }
           ]}
         />
-        <main className='max-w-8xl container mx-auto px-4 py-8'>{children}</main>
+        {children}
       </body>
     </html>
   )

@@ -1,3 +1,4 @@
+import { content, plugin } from 'flowbite-react/tailwind'
 import type { Config } from 'tailwindcss'
 
 export default {
@@ -6,7 +7,8 @@ export default {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/layout/**/*.{js,ts,jsx,tsx}',
-    './src/features/**/*.{js,ts,jsx,tsx}'
+    './src/features/**/*.{js,ts,jsx,tsx}',
+    content()
   ],
   theme: {
     extend: {
@@ -18,5 +20,5 @@ export default {
       }
     }
   },
-  plugins: []
+  plugins: [plugin()]
 } satisfies Config
