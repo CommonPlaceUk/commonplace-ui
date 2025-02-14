@@ -26,7 +26,7 @@ const partyColourMap: PartyColorMap = {
 }
 
 // This function returns Tailwind classes for ring + accent bar
-const getPartyColours = (party: string): PartyColorEntry => {
+export const getPartyColours = (party: string): PartyColorEntry => {
   const lowerParty = party.toLowerCase()
   return (
     partyColourMap[lowerParty] ?? {

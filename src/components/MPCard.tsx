@@ -4,6 +4,8 @@ import clsx from 'clsx'
 import Image from 'next/image'
 import { FC } from 'react'
 
+import { getPartyColours } from '@/utils/getPartyColours'
+
 interface MPCardProps {
   name: string
   party: string
